@@ -12,7 +12,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12pt"
-            android:id="@+id/txtViewIntent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="284dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:id="@+id/txtViewIntent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="224dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"/>
+    <Button
+            android:text="Siguiente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnnext"
+            android:background="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="140dp" app:layout_constraintHorizontal_bias="0.0"/>
+
+    <include
+            layout="@layout/layout_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <!--
+    <android.support.v7.widget.Toolbar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/actionBarsDos" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtViewIntent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0"/>
+    -->
+
 </android.support.constraint.ConstraintLayout>

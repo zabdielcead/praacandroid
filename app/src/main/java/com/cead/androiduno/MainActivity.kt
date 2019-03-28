@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.layout_actionbar.*
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Toast.makeText(this,"Primer activity", Toast.LENGTH_LONG).show()
+
+        //forzar el icono en el Action Bar
+        setSupportActionBar(actionBars)
+        supportActionBar!!.title = "Hello APP"
+        supportActionBar!!.subtitle = "APP SUBTITLE"
+        supportActionBar!!.setDisplayShowHomeEnabled(true)
+        supportActionBar!!.setIcon(R.mipmap.ic_launcher)
+
+        // forzar el icono en el Action Bar
+        supportActionBar!!.setDisplayShowHomeEnabled(true)
+
+
 
         btnCalcular.setOnClickListener{
             val anioNacimiento:Int = editText.text.toString().toInt()
@@ -37,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(activity, nextActivity)
         intent.putExtra("saludo",SALUDO)
         activity.startActivity(intent)
-        activity.finish()
+        //activity.finish()
     }
 
 /*
