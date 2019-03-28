@@ -13,7 +13,7 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    val LOGTAG = "LOGONE"
+    val LOGTAG = "LOGONESSA"
     val SALUDO =  "HOLA DESDE EL ACTIVITY MAIN"
 
     override fun onCreate(savedInstanceState: Bundle?) {
