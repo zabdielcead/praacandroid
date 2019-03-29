@@ -63,13 +63,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonEmailMe"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            app:layout_constraintHorizontal_bias="0.852"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/include"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/buttonContactPhone"
-            app:layout_constraintVertical_bias="0.816"/>
+            android:layout_marginTop="320dp"
+            app:layout_constraintTop_toBottomOf="@+id/include" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="24dp" android:layout_marginStart="24dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageButtonCamera" app:layout_constraintVertical_bias="0.0"/>
     <Button
             android:text="Contactame"
             android:background="@color/colorPrimary"
@@ -78,11 +75,10 @@
             android:paddingRight="18dp"
             android:layout_height="wrap_content"
             android:id="@+id/buttonContactPhone"
-            android:layout_marginStart="216dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="216dp"
-            android:layout_marginBottom="96dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageButtonCamera" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/include" app:layout_constraintVertical_bias="0.931"/>
+            android:layout_marginTop="320dp"
+            app:layout_constraintTop_toBottomOf="@+id/include" app:layout_constraintStart_toEndOf="@+id/buttonEmailMe"
+            android:layout_marginStart="20dp" android:layout_marginLeft="20dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageButtonCamera" app:layout_constraintVertical_bias="0.0"/>
     <ImageButton
             android:layout_width="411dp"
             android:background="@color/colorAccent"
